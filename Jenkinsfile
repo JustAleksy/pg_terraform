@@ -3,8 +3,11 @@ pipeline {
 
     environment {
         // Здесь указываем переменные окружения (например, для AWS/Yandex)
-        TF_VAR_access_key = credentials('3a9131b4-b041-479c-9ad0-72977796806b')
-        TF_VAR_secret_key = credentials('9ecd015f-59af-4fa3-b36a-4f47f3bc65a1')
+        TF_VAR_access_key     = credentials('3a9131b4-b041-479c-9ad0-72977796806b')
+        TF_VAR_secret_key     = credentials('9ecd015f-59af-4fa3-b36a-4f47f3bc65a1')
+	AWS_ACCESS_KEY_ID     = credentials('3a9131b4-b041-479c-9ad0-72977796806b')
+	AWS_SECRET_ACCESS_KEY = credentials('9ecd015f-59af-4fa3-b36a-4f47f3bc65a1')
+
     }
 
     stages {
