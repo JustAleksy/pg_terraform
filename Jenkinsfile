@@ -40,12 +40,6 @@ pipeline {
         }
 
         stage('Terraform Apply') {
-            when {
-		expression {
-		    echo "Current branch: ${env.BRANCH_NAME}"
-		    return env.BRANCH_NAME == 'master'
-		}
-            }
             steps {
                 // Применение изменений Terraform
                 sh 'terraform apply -auto-approve'
