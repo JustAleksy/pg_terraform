@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Клонирование вашего Git-репозитория
-                git branch: 'main', url: 'https://github.com/JustAleksy/pg_terraform'
+                git branch: 'master', url: 'https://github.com/JustAleksy/pg_terraform'
             }
         }
 
@@ -45,7 +45,7 @@ pipeline {
 
         stage('Terraform Apply') {
             when {
-                branch 'main' // Применение изменений только при коммитах в ветку main
+                branch 'master' // Применение изменений только при коммитах в ветку main
             }
             steps {
                 // Применение изменений Terraform
