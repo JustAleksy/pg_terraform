@@ -25,7 +25,8 @@ terraform {
 }
 
 provider "yandex" {
-  token     = var.token != "" ? var.token : var.YC_TOKEN
+  # token     = var.token != "" ? var.token : var.YC_TOKEN
+  service_account_key_file = var.SA_KEY_FILE
   cloud_id  = var.cloud_id
   folder_id = var.folder_id
   zone      = var.zones["a"]

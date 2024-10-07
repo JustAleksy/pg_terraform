@@ -26,6 +26,12 @@ variable "YC_SECRET_KEY" {
   default     = ""
 }
 
+variable "SA_KEY_FILE" {
+  description = "Secret Key для Yandex Object Storage"
+  type        = string
+  default     = "/home/aleksei/authorized_key.json"
+}
+
 ############################################
 # Настройки инфраструктуры
 ############################################
