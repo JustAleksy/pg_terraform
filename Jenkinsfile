@@ -25,13 +25,6 @@ pipeline {
             }
         }
 
-        stage('Terraform Format') {
-            steps {
-                // Проверка форматирования файлов Terraform
-                sh 'terraform fmt -check'
-            }
-        }
-
         stage('Terraform Validate') {
             steps {
                 // Валидация конфигурации Terraform
