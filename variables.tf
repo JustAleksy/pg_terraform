@@ -2,6 +2,12 @@
 # Аутентификация и доступ
 ############################################
 
+variable "token" {
+  description = "OAuth-токен Yandex Cloud, полученный из переменной окружения"
+  type        = string
+  default     = ""
+}
+
 variable "YC_TOKEN" {
   description = "OAuth-токен Yandex Cloud, полученный из переменной окружения"
   type        = string
