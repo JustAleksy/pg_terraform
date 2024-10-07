@@ -41,7 +41,10 @@ pipeline {
 
         stage('Terraform Apply') {
             when {
-                branch 'master' // Применение изменений только при коммитах в ветку main
+		expression {
+		    echo "Current branch: ${env.BRANCH_NAME}
+		    return env.BRANCH_NAME == 'master'
+		}
             }
             steps {
                 // Применение изменений Terraform
