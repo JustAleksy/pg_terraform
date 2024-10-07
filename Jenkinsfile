@@ -42,7 +42,7 @@ pipeline {
         stage('Terraform Apply') {
             when {
 		expression {
-		    echo "Current branch: ${env.BRANCH_NAME}
+		    echo "Current branch: ${env.BRANCH_NAME}"
 		    return env.BRANCH_NAME == 'master'
 		}
             }
