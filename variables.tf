@@ -2,11 +2,11 @@
 # Аутентификация и доступ
 ############################################
 
-# variable "YC_TOKEN" {
-#   description = "OAuth-токен Yandex Cloud, полученный из переменной окружения"
-#   type        = string
-#   default     = ""
-# }
+variable "YC_TOKEN" {
+  description = "OAuth-токен Yandex Cloud, полученный из переменной окружения"
+  type        = string
+  default     = ""
+}
 
 variable "access_key" {
   description = "Access Key для Yandex Object Storage"
@@ -19,6 +19,8 @@ variable "secret_key" {
   type        = string
   default     = ""
 }
+
+
 
 ############################################
 # Настройки инфраструктуры
