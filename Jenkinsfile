@@ -3,8 +3,9 @@ pipeline {
 
     environment {
         // Здесь указываем переменные окружения (например, для AWS/Yandex)
-        TF_VAR_access_key = credentials('3a9131b4-b041-479c-9ad0-72977796806b') // ID креденшала в Jenkins
-        TF_VAR_secret_key = credentials('9ecd015f-59af-4fa3-b36a-4f47f3bc65a1') // ID креденшала в Jenkins
+        // TF_VAR_access_key = credentials('3a9131b4-b041-479c-9ad0-72977796806b')
+        // TF_VAR_secret_key = credentials('9ecd015f-59af-4fa3-b36a-4f47f3bc65a1')
+        YC_SERVICE_ACCOUNT_KEY_FILE = credentials('62745c43-8656-4b13-8060-57aa6ff9f329')
     }
 
     stages {
