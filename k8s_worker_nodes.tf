@@ -1,5 +1,5 @@
 resource "yandex_compute_instance" "k8s_worker_nodes" {
-  count = 2
+  count = 3
   name  = "k8s-worker-${count.index}"
   platform_id = var.platform_id
 
