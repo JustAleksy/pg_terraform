@@ -7,7 +7,7 @@ pipeline {
         TF_VAR_secret_key     		= credentials('9ecd015f-59af-4fa3-b36a-4f47f3bc65a1')
         AWS_ACCESS_KEY_ID     		= credentials('3a9131b4-b041-479c-9ad0-72977796806b')
         AWS_SECRET_ACCESS_KEY 		= credentials('9ecd015f-59af-4fa3-b36a-4f47f3bc65a1')
-        YC_SERVICE_ACCOUNT_KEY_FILE 	= credentials('65954801-473c-4b32-9baf-d36109a4884f')
+        YC_SERVICE_ACCOUNT_KEY_FILE 	= credentials('a2fe2cc2-1962-40b3-9c56-adc4a12ec96b')
     }
 
     stages {
